@@ -7,11 +7,10 @@ phases:
       - mvn --version
   pre_build:
     commands:
-      - echo Skipping Docker login (no credentials provided)
+      - echo Skipping Docker login no credentials provided  # Corrected command
   build:
     commands:
       - echo Building, Testing and packaging the application...
-      - cd path/to/your/project/directory  # Change this to the correct path where your pom.xml is located
       - mvn package
   post_build:
     commands:
