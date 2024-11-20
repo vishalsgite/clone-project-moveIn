@@ -8,7 +8,7 @@ phases:
       - echo Installing Maven...
   pre_build:
     commands:
-      - echo Skipping Docker login (no credentials provided)
+      - echo "Skipping Docker login (no credentials provided)"
   build:
     commands:
       - echo Building, Testing and packaging the application...
